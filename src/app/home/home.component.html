@@ -1,16 +1,5 @@
-<app-navbar></app-navbar>
 <div class="row">
   <div *ngFor="let value of items">
-    <div class="card" style="width: 18rem; margin:40px;">
-      <div class="card-body">
-        <h5 class="card-title">{{value.name}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{value.club}}</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <button type="button" class="btn btn-primary card-link">WishList</button>
-        <button type="button" class="btn btn-success card-link">Cart</button>
-      </div>
-    </div>
+    <app-card [items]="value"></app-card>
   </div>
 </div>
-<router-outlet></router-outlet>
